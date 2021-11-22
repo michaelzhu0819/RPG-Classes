@@ -4,6 +4,14 @@
 # CS30
 # Ms.Cotcher
 
+# Importing all of the modules
+import mapping
+import character
+import inventory
+import sys
+import enemy
+import time
+
 """ This is a game where you are an adventurer trying to escape
 a wasteland with a locked door, navigate through the biome with four
 movements, encounter and defeat enemies, collect resources, and try to find
@@ -13,14 +21,6 @@ characters and locations in the main menu"""
 """ These variables set up the catagories for actions and the coordinate
 system, the dictionaries holding your two inventories by executing the
 inventory module, along with variables for combat"""
-
-# Importing all of the modules
-import mapping
-import character
-import inventory
-import sys
-import enemy
-import time
 
 x = 2
 y = 1
@@ -108,8 +108,8 @@ def combat():
                     critical_stack += 1
             else:
                 print(
-                    "\nYou didn't focus enough and got clapped by the enemy's "
-                    + "fast hands\n")
+                    "\nYou didn't focus enough and got clapped by the " +
+                    "enemy's fast hands\n")
                 health -= enemy_att * 3
                 focus += 1
                 perfect_stack += 5
@@ -210,8 +210,8 @@ while True:
                     else:
                         time.sleep(1)
                         print(
-                            f"\n{p.name} couldn't keep his most precious possession from "
-                            + "being stolen: his life\n")
+                            f"\n{p.name} couldn't keep his most precious " +
+                             "possession from being stolen: his life\n")
                         time.sleep(1)
 
                 if x == 3 and y == 3:
@@ -226,8 +226,8 @@ while True:
                     else:
                         time.sleep(1)
                         print(
-                            f"\nthe armor of {p.name} is broken on the ground just like "
-                            + "his skull\n")
+                            f"\nthe armor of {p.name} is broken on the " +
+                             "ground just like his skull\n")
                         time.sleep(1)
 
                 if x == 0 and y == 2 or x == 1 and y == 3:
@@ -242,8 +242,8 @@ while True:
                     else:
                         time.sleep(1)
                         print(
-                            f"\nthe great {p.name} has fallen, he doesn't look so "
-                            + "intiminating after all\n")
+                            f"\nthe great {p.name} has fallen, he doesn't " +
+                             "look so intiminating after all\n")
                         time.sleep(1)
 
                 # Displays your exploration inventory
