@@ -1,5 +1,6 @@
 """ These classes and functions define the four characters in the game"""
 
+
 # The general class for all the characters
 class characters:
     def __init__(self, hp, damage, focus):
@@ -33,8 +34,8 @@ class mage(characters):
         self.damage = 29
         self.focus = 14
         print(
-            "-mage have high damage and can have less cooldown on weapons and"
-            + "healing items")
+            "-mage have high damage and can have less cooldown on weapons " +
+            "and healing items")
 
 
 class tank(characters):
